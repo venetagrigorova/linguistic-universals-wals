@@ -1,5 +1,17 @@
 # Milestone 1 – Testing Linguistic Universals with WALS
 
+## Setup the Project Environment
+
+To setup the project environment, install all dependencies in the 'env.yml' file.
+You can do this by creating a conda environment using this command:
+```bash
+conda env create -f env.yml
+```
+
+## Run Milestone 1
+
+The explanations and code for milestone 1 is in the 'milestone1_ud_features.ipynb' notebook.
+
 ### why we chose these features
 we picked features from WALS that describe how words and phrases are ordered:
 
