@@ -1,5 +1,18 @@
 # Milestone 1 – Testing Linguistic Universals with WALS
 
+Group 8 Members:
+- Liszt Philip Gustav  
+- Grigorova Veneta  
+- Maaßen Melodie Diana  
+- Esaiasson Nils Teodor 
+
+Instructor: Varvara Arzt
+
+In this milestone, we started setting up our project for testing **Greenberg’s (1963) word-order universals**.  
+We’ll use the **World Atlas of Language Structures (WALS)** data.
+
+For this part, we chose 15 main universals (plus #41) and matched each one with the right WALS features that describe things like word order, adpositions, and noun phrase structure.  
+
 ## Setup the Project Environment
 
 To setup the project environment, install all dependencies in the 'env.yml' file.
@@ -12,8 +25,8 @@ conda env create -f env.yml
 
 The explanations and code for milestone 1 is in the 'milestone1_ud_features.ipynb' notebook.
 
-### why we chose these features
-we picked features from WALS that describe how words and phrases are ordered:
+### Why we chose these features
+We picked features from WALS that describe how words and phrases are ordered:
 
 | WALS code | Feature name | Why it matters |
 |------------|---------------|----------------|
