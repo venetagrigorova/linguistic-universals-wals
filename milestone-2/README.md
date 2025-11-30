@@ -1,4 +1,4 @@
-## Milestone 2
+# Milestone 2
 
 ### (a) Universals that are strongly supported
 
