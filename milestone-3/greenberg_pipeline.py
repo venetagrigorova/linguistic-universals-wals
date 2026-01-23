@@ -284,12 +284,25 @@ def plot_rule_geomap(
             if col in df_geo.columns:
                 hover_data[col] = True
 
+    # Create a display column for legend labels
+    df_plot = df_geo.copy()
+    df_plot["_violation_label"] = df_plot[violation_col].map({
+        0: "False",
+        1: "True",
+    }).astype("category")
+
     fig = px.scatter_geo(
-        df_geo,
+        df_plot,
         lat=lat_col,
         lon=lon_col,
-        color=violation_col,
-        hover_name=hover_name_col if hover_name_col in df_geo.columns else None,
+        color="_violation_label",
+        category_orders={"_violation_label": ["False", "True"]},
+        color_discrete_map={
+            "False": "blue",    # no violation
+            "True": "yellow",  # violation
+        },
+        labels={"_violation_label": "Violation"},
+        hover_name=hover_name_col if hover_name_col in df_plot.columns else None,
         hover_data=hover_data,
         title=f"{rule_id}: testable languages (colored by violation)",
     )
@@ -299,8 +312,7 @@ def plot_rule_geomap(
             showland=True,
             showcountries=True,
             projection_type=projection,
-        ),
-        legend_title_text="Violation",
+        )
     )
 
     fig.show()
