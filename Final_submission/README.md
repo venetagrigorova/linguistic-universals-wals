@@ -40,4 +40,7 @@ The quantitative analysis of the rules using the WALS data is found in 'crosstab
 The Geographic analysis of rule 19, 20, 21, 23, 24, and 41 is found in 'geographic_analysis.ipynb'.
 
 ### Rule based classifier and Decision Tree 
-The rule based classifier and the Descision Tree built on the WALS data is found in the file rule_based_classifier_and_decision_tree.ipynb  
+The rule based classifier and the Descision Tree built on the WALS data is found in the file rule_based_classifier_and_decision_tree.ipynb 
+
+### Corpus-based analysis with Universisal Dependencies
+The corpus-based analysis of rules 20, 23, and 24 using the German UD treebank is found in milestone_3_ud_rule_20_23_24.ipynb.
